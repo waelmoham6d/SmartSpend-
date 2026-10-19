@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Standalone interactive preview of the SmartSpend AI Flutter app. Prototype with sample data only." />
+  <title>SmartSpend AI · معاينة تفاعلية</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="stage">
+    <div class="stage__top">
+      <span class="pill" id="previewNote">معاينة أولية · بيانات تجريبية</span>
+    </div>
+
+    <div class="phone" id="phone">
+      <div class="phone__speaker" aria-hidden="true"></div>
+      <div class="app" id="app" aria-live="polite"></div>
+    </div>
+
+    <p class="stage__caption" id="previewCaption">
+      نموذج أولي تفاعلي للمعاينة فقط — لا يتم حفظ أي بيانات ولا يوجد اتصال بقاعدة البيانات.
+    </p>
+  </div>
+
+  <!-- Classic scripts (no bundler, works straight from file://) -->
+  <script src="data.js"></script>
+  <script src="icons.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
